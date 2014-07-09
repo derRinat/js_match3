@@ -1,0 +1,127 @@
+/* CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align: baseline;background:transparent;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, output, section, summary{display:block;}meter,progress,mark, time{display:inline;}ol, ul {list-style: none;}blockquote,q{quotes: none;}html,body{height:100%;}img {border:0;vertical-align:top;text-align:left;}object{vertical-align:top;outline:none;}ul,ol{list-style:none;}table,table td{padding:0;border:none;border-collapse:collapse;}input,select,textarea{font-family:Arial, Helvetica, sans-serif;font-size:1em;vertical-align:middle;font-weight:normal;margin:0;padding:0;}textarea{overflow:auto;}
+
+
+/* Common  */
+.hide {
+    display: none;
+}
+
+.warning {
+    color: #d10606;
+}
+
+/* Game */
+#gameContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#board {
+    width: 256px;
+    height: 256px;
+    border: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
+}
+
+.start {
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 50px;
+    width: 150px;
+}
+
+.start .message {
+    font-family: arial, sans-serif;
+    color: #3c599f;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.start .scores {
+    font-family: arial, sans-serif;
+    color: #3c599f;
+    font-size: 68px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.start a{
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+   background-color:#3c599f;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:17px;
+    font-weight:bold;
+    padding:11px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+
+.gameData {
+    font-family: arial, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    background: #3c599f;
+    width: 256px;
+}
+
+.gameData div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.gameData .scores {
+    padding-left: 10px;
+    width: 50%;
+}
+
+.gameData .time, .gameData .moves{
+    float:none;
+    margin-left:50%;
+}
+
+/* Tiles */
+.tile {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #d0d0d0;
+    margin: 23px;
+}
+
+.tile.selected {
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.tile.blue {
+    background-color: #3A3AF2;
+}
+
+.tile.green {
+    background-color: #3EC242;
+}
+
+.tile.purple {
+    background-color: #E607E6;
+}
+
+.tile.red {
+    background-color: #DB240F;
+}
+
+.tile.yellow {
+    background-color: #E6F200;
+}

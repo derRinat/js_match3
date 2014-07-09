@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>King Test</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script>
+        window.GameScope = {}; // create game scope
+    </script>
+
+</head>
+<body>
+<div id="gameContainer">
+    <div id="board">
+        <div class="start">
+            <div class="message"></div>
+            <div class="sbutton"><a href="javascript:void(0)">Start Game</a></div>
+            <div class="scores"></div>
+        </div>
+    </div>
+    <div class="gameData hide">
+        <div class="scores">Scores: <span>0</span></div>
+        <div class="time hide">Time: <span>0</span></div>
+        <div class="moves hide">Moves: <span>0</span></div>
+    </div>
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.helper.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/board.js"></script>
+<script src="js/boardView.js"></script>
+<script src="js/game.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
