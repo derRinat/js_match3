@@ -1,2 +1,2 @@
 Match3 game prototype
-Pure JS, Jquery as helper
+Pure JS, JQuery as helper
